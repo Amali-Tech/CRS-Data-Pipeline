@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
 # C extensions
 *.so
 
@@ -192,3 +193,44 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+
+# Terrafrom 
+#  Terraform specific template is maintained in a separate Terraform.gitignore that can
+#  be found at
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.terraform/
+.terraform.lock.hcl
+.terraformrc
+terraform.rc
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+crash.log
+crash.*.log
+
+# Terraform module dependencies
+.terraform.d/
+modules/
+.terraform/plugins/
+.terraform/providers/
+
+# Local Terraform directories
+.terraform/
+terraform.tfstate.backup
+terraform.tfstate.d/
+
+# Sensitive Terraform files
+*.auto.tfvars
+*.auto.tfvars.json
+secret.tfvars
+terraform.tfvars.json
+
+# Terraform plan output
+plan.out
+plan.json
